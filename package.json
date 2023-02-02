@@ -1,0 +1,42 @@
+{
+  "name": "sc-db-index-maintenance",
+  "version": "0.0.3",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "repl:run": "ts-node-esm --experimentalSpecifierResolution=node --transpileOnly --interactive --eval \"$( cat init-test.ts )\"",
+    "repl": "export $(grep -v '^#' .env 2>/dev/null | xargs -d '\n') >/dev/null && yarn run repl:run",
+    "build": "rimraf dist && tsc",
+    "preversion": "",
+    "version": "",
+    "postversion": "",
+    "prepublish": "yarn run build",
+    "semantic-release": "semantic-release"
+  },
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "mongodb": "^5.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/gitlab": "^10.1.2",
+    "@semantic-release/npm": "^9.0.2",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "bson": "^5.0.0",
+    "eslint": "^8.32.0",
+    "eslint-config-google": "^0.14.0",
+    "sc-semantic-release": "^1.3.0",
+    "semantic-release": "^20.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
