@@ -4,8 +4,8 @@
 
 **/coverage
 **/reports
-**/dist
 
 junit.xml
 
+/lib
 /*.[jt]s

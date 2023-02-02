@@ -4,7 +4,7 @@
         "outDir": "./lib",
         "lib": ["ES2015"],
         "sourceMap": false,
-        "declaration": false,
+        "declaration": true,
         "declarationMap": false,
         "resolveJsonModule": true,
         "moduleResolution": "node",
@@ -13,7 +13,13 @@
         "module": "ES2015",
         "target": "ES2015",
         "esModuleInterop": true,
-        "removeComments": true
+        "removeComments": true,
+        "noImplicitAny": true
     },
-    "include": ["src/**/*"]
+    "include": ["src/**/*"],
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    }
 }
