@@ -1,11 +1,11 @@
 {
   "name": "sc-db-index-maintenance",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "repl:run": "ts-node-esm --experimentalSpecifierResolution=node --transpileOnly --interactive --eval \"$( cat init-test.ts )\"",
+    "repl:run": "ts-node-esm --experimentalSpecifierResolution=node --interactive --eval \"$( cat init-test.ts )\"",
     "repl": "export $(grep -v '^#' .env 2>/dev/null | xargs -d '\n') >/dev/null && yarn run repl:run",
     "build": "rimraf dist && tsc",
     "preversion": "",
