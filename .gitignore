@@ -9,3 +9,5 @@ junit.xml
 
 /lib
 /*.[jt]s
+
+**/*.log

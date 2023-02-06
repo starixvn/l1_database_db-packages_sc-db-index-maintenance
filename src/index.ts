@@ -1,1 +1,1 @@
-export { deployIndex, deployIndexes } from "./mongodb-index-maintenance";
+export { deployIndex, deployIndexes, getIndex, getIndexes } from "./mongodb-index-maintenance";

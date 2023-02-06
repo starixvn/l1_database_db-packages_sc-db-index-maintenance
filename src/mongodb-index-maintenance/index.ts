@@ -1,1 +1,1 @@
-export { deployIndex, deployIndexes } from "./indexing";
+export { deployIndex, deployIndexes, getIndex, getIndexes } from "./indexing";

@@ -15,9 +15,6 @@
     "prepublish": "yarn run build",
     "publish": "",
     "postpublish": "",
-    "bump:beta": "yarn version --verbose --no-git-tag-version --prerelease",
-    "bump:": "",
-    "publish:beta": "yarn run bump:beta && yarn publish",
     "semantic-release": "semantic-release"
   },
   "license": "ISC",

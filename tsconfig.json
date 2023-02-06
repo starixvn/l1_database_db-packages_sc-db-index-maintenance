@@ -2,24 +2,15 @@
     "compilerOptions": {
         "rootDir": "./src",
         "outDir": "./lib",
-        "lib": ["ES2015"],
-        "sourceMap": false,
-        "declaration": true,
-        "declarationMap": false,
-        "resolveJsonModule": true,
+        "module": "ES2020",
+        "target": "ES2020",
         "moduleResolution": "node",
-        "allowJs": true,
-        "checkJs": false,
-        "module": "ES2015",
-        "target": "ES2015",
+        "strict": true,
+        "declaration": true,
+        "resolveJsonModule": true,
         "esModuleInterop": true,
         "removeComments": true,
-        "noImplicitAny": true
+        "preserveConstEnums": true
     },
     "include": ["src/**/*"],
-    "ts-node": {
-        "compilerOptions": {
-            "module": "CommonJS"
-        }
-    }
 }
